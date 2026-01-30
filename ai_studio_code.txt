@@ -1,0 +1,29 @@
+/ (Raiz do Projeto)
+│
+├── index.html                <-- (JÁ CRIADO) A "casca" do site. Onde tudo começa.
+│
+├── assets/                   <-- PASTA DO FRONTEND (O que o aluno vê)
+│   ├── css/
+│   │   └── style.css         <-- O design (cores, fontes, responsividade)
+│   │
+│   ├── js/
+│   │   ├── main.js           <-- O cérebro principal (controla o site)
+│   │   └── auth.js           <-- Scripts de Login e Cadastro
+│   │
+│   └── images/               <-- Logos, ícones, banners
+│
+└── api/                      <-- PASTA DO BACKEND (O motor PHP invisível)
+    │
+    ├── config/               <-- Configurações do sistema
+    │   └── database.php      <-- (PRÓXIMO PASSO) A chave do cofre (conexão MySQL)
+    │
+    ├── auth/                 <-- Scripts de Autenticação
+    │   ├── login.php         <-- Verifica usuário e senha
+    │   └── cadastro.php      <-- Cria novo aluno
+    │
+    ├── cursos/               <-- Scripts de Conteúdo
+    │   ├── listar.php        <-- Busca os cursos no banco
+    │   └── detalhes.php      <-- Busca aulas de um curso
+    │
+    └── pagamentos/           <-- Integrações financeiras
+        └── webhook.php       <-- Recebe aviso do Mercado Pago
